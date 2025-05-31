@@ -4,6 +4,8 @@ Our deep model is designed to predict the position of an oscillating spring acro
 ## How we built it
 We decided to use Python to code our project since Python has many built in libraries which would be very useful for our AI related project. We used several libraries from PyPI to build our model such as torch, numpy, matplotlib, and sklearn within our project. We first generate around 10,000 data points, 90% of which will be used to train the model, and the remaining 10% will be used to test the model. The model will use the data to train, and after each output, it will compare its own prediction with the actual true result. To learn from its own mistakes, it will go back and self-adjust its parameters so its next prediction would be more accurate and reduce error. After training the model, we will feed it the remaining 10% of the data which is unseen by the model. The model will try to make a prediction based on its training which will be displayed.
 ## PyPI Libraries
+These are the commands to download the necessary PyPI libraries in order to run the code:
+
 pip install pip
 
 pip install numpy
